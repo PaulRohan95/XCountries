@@ -9,10 +9,9 @@
 }
 
 .countryCard {
-    display: grid;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center; 
     margin: 10px; 
     border: 1px solid rgb(190, 181, 181);

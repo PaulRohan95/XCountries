@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Countries.module.css';
-import FlagCard from '../FlagCard/FlagCard'
 
 function Countries({ searchText }) {
     
@@ -31,11 +30,12 @@ useEffect(() => {
     <div className={styles.wrapperCard}>
         {result.map((country) => (
           <div key={country.cca3} className={styles.countryCard}>
-            <FlagCard                
-                name={country.name.common} 
-                flagImg={country.flags.png} 
-                flagAltTxt={country.flags.alt} 
+            <img               
+                src={country.flags.png} 
+                alt={country.flags.alt} 
+                style={{ width: '100px', height: '100px' }}
             />
+            <h2>{country.name.common}</h2>
           </div>
         ))}
     </div>
