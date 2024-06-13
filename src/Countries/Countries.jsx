@@ -28,14 +28,15 @@ useEffect(() => {
 }, [searchText, countries]);
     
   return (
-    <div className={styles.countryCard}>
+    <div className={styles.wrapperCard}>
         {result.map((country) => (
-            <FlagCard 
-                key={country.cca3}
+          <div key={country.cca3} className={styles.countryCard}>
+            <FlagCard                
                 name={country.name.common} 
                 flagImg={country.flags.png} 
                 flagAltTxt={country.flags.alt} 
             />
+          </div>
         ))}
     </div>
   )
