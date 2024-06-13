@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SearchBar.module.css';
+import './SearchBar.css';
 
 function SearchBar({ searchText, setSearchText }) {
 
@@ -10,7 +10,7 @@ function SearchBar({ searchText, setSearchText }) {
   return (
     <div>
         <input type="text" 
-            className={styles.searchBar} 
+            className="searchBar" 
             placeholder='Search for countries...'
             value={searchText}
             onChange={handleChange}

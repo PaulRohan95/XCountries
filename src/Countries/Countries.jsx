@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './Countries.module.css';
+import './Countries.css';
 
 function Countries({ searchText }) {
     
@@ -27,9 +27,9 @@ useEffect(() => {
 }, [searchText, countries]);
     
   return (
-    <div className={styles.wrapperCard}>
+    <div className="wrapperCard">
         {result.map((country) => (
-          <div key={country.cca3} className={styles.countryCard}>
+          <div key={country.cca3} className="countryCard">
             <img               
                 src={country.flags.png} 
                 alt={country.flags.alt} 
