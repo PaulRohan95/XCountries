@@ -4,7 +4,7 @@ import styles from './FlagCard.module.css';
 
 function FlagCard({ name, flagImg, flagAltTxt }) {
   return (
-    <div className={styles.countryCard}>
+    <div className={styles.wrapperCard}>
         <img 
         src={flagImg} 
         alt={flagAltTxt} 
