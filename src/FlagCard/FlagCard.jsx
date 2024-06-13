@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './countryCard.module.css';
+import styles from './FlagCard.module.css';
 
 
-function countryCard({ name, flagImg, flagAltTxt }) {
+function FlagCard({ name, flagImg, flagAltTxt }) {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.countryCard}>
         <img 
         src={flagImg} 
         alt={flagAltTxt} 
@@ -15,4 +15,4 @@ function countryCard({ name, flagImg, flagAltTxt }) {
   )
 }
 
-export default countryCard;
+export default FlagCard;
